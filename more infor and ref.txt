@@ -1,0 +1,4 @@
+21th-21-2026
+vocabulary
+- seedColor: ពណ៍គោល
+ref for color scheme: https://www.figma.com/resource-library/color-combinations/
