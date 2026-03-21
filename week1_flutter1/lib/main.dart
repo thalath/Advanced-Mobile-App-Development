@@ -10,21 +10,27 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    Color seedColor =  Colors.lime;
     return MaterialApp(
       title: 'Flutter Demo',
       themeMode: ThemeMode.dark,
       
       theme: ThemeData(
         brightness: Brightness.light,
-        colorScheme: .fromSeed(seedColor: seedColor),
-        
+        colorScheme: .fromSeed(seedColor: Color(0xfff2f2f2)),
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Color(0xffad56c4),
+          foregroundColor: Color(0xfff5f5f5),
+        )
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
-        colorScheme: .fromSeed(seedColor: seedColor,
+        colorScheme: .fromSeed(seedColor: Color(0xffffc2ba),
         brightness: Brightness.dark),
-        
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Color(0xffad56c4),
+          foregroundColor: Color(0xfff5f5f5),
+        )
+
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -53,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.tertiary,
+        backgroundColor: Color(0xffff8da1),
         foregroundColor: Theme.of(context).colorScheme.onTertiary,
         title: Text(widget.title),
       ),
