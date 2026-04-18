@@ -13,7 +13,6 @@ class DetailScreen extends StatefulWidget {
 class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
-    ProductModel item = this.widget.item;
     return Scaffold(
       appBar: AppBar(title: Text("Detail")),
 
