@@ -21,7 +21,6 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
         title: Text("Hello world"),
-
       ),
       body: _buildBody(),
     );
@@ -46,7 +45,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        childAspectRatio: 1000000000000000/1000000000000000,
+        childAspectRatio: 1000000000000000 / 1000000000000000,
       ),
       itemCount: items.length,
       itemBuilder: (BuildContext context, int index) {
@@ -70,8 +69,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 child: Text(item.title),
               ),
-
-              
             ],
           ),
         );
